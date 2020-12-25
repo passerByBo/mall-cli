@@ -1,0 +1,31 @@
+{
+  "name": "@mall/cli",
+  "version": "1.0.0",
+  "description": "商城构建脚手架",
+  "bin": {
+    "mall": "bin/mall.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malljs/mall-cli.git",
+    "directory": "packages/@mall/cli"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mall/cli-shared-utils": "1.0.0",
+    "commander": "^6.2.1",
+    "fs-extra": "^9.0.1",
+    "inquirer": "^7.3.3",
+    "leven": "^3.1.0",
+    "minimist": "^1.2.5",
+    "validate-npm-package-name": "^3.0.0"
+  },
+  "engines": {
+    "node": "^10.12.0 || ^12.0.0 || >= 14.00"
+  }
+}

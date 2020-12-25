@@ -1,0 +1,10 @@
+{
+  "name": "mall",
+  "private": true,
+  "workspaces": [
+    "packages/@mall/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
