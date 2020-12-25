@@ -7,6 +7,11 @@ const inquirer = require('inquirer')
 const validateProjectName = require('validate-npm-package-name')
 const { chalk } = require('@mall/cli-shared-utils')
 const { exit } = require('process')
+//暂未实现
+const {clearConsole} = require('./util/clearConsole')
+//暂未实现
+const {getPromptModules} = require('./util/createTools')
+const Creator = require();
 
 async function create(projectName, options) {
     //设置代理
@@ -75,6 +80,8 @@ async function create(projectName, options) {
         }
     }
 
+    const creator = new Creator(name, targetDir, getPromptModules())
+    await creator.create(options)
 }
 
 module.exports = (...arg) => {

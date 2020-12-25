@@ -1,0 +1,1 @@
+const getVersions = require('./getVersions')
