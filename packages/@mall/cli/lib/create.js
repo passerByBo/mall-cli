@@ -7,11 +7,9 @@ const inquirer = require('inquirer')
 const validateProjectName = require('validate-npm-package-name')
 const { chalk } = require('@mall/cli-shared-utils')
 const { exit } = require('process')
-//暂未实现
 const {clearConsole} = require('./util/clearConsole')
-//暂未实现
 const {getPromptModules} = require('./util/createTools')
-const Creator = require();
+const Creator = require('./Creator')
 
 async function create(projectName, options) {
     //设置代理
@@ -42,8 +40,9 @@ async function create(projectName, options) {
         if (options.force) {
             await fs.remove(targetDir)
         } else {
-            // await clearConsole()
-            //在当前目录下构建工程进不来，上方的名称验证不能通过
+            console.log('======================')
+             await clearConsole()
+             console.log('-------------------')
             if (inCurrent) {
                 const { ok } = await inquirer.prompt([
                     {

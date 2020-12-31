@@ -23,7 +23,7 @@ exports.execa = require('execa');
 //判断版本的库
 exports.semver = require('semver')
 
-Object.defineProperties(exports, 'installedBrowsers', {
+Object.defineProperty(exports, 'installedBrowsers', {
     enumerable: true,
     get() {
         return exports.getInstalledBrowsers()
